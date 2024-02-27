@@ -14,6 +14,7 @@ class LoginSystem {
         System.out.println("Who are you?:");
         System.out.println("1. Login As Student");
         System.out.println("2. Login As Admin");
+        System.out.println("3. Exit");
         System.out.print("Pilihan Anda: ");
         int userType = scanner.nextInt();
         scanner.nextLine(); // Membuang newline character
@@ -40,6 +41,8 @@ class LoginSystem {
             } else {
                 System.out.println("Login Anda GAGAK\n. NIM Tidak Valid.");
             }
+        } else if (userType == 3){
+            System.out.println("===GOODBYE===");
         } else {
             System.out.println("Pilihan Tidak Valid.");
         }
